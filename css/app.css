@@ -1,0 +1,131 @@
+/* 
+    Document   : app
+    Created on : Dec 13, 2013, 6:54:53 AM
+    Author     : Bob
+    light blue : #cfe6e6
+    med blue   : #b9d9d9
+    blue       : #86abb5
+    light grey : #e8e8e1
+    grey       : #888d9c
+    dark grey  : #474752
+
+*/
+
+root { 
+  display: block;
+}
+body {
+  font-family: "Open Sans", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+nav {
+  height: 90px;
+  font-family: Arial,sans-serif;
+}
+header {
+  height: 43px;
+  background: #e8e8e1;
+}
+section#top {
+/*  height: 550px;*/
+  background: #86abb5;
+  color: #fff;
+  font-size: 300%;
+}
+section#middle {
+/*  height: 450px;*/
+  background: #fff;
+  color: #888d9c;
+  font-size: 150%;
+  line-height: 1.5;
+  padding: 20px 0 80px 0;
+}
+section#bottom {
+  height: 350px;
+  background: #e8e8e1;
+  color: #888d9c;
+  font-size: 300%;
+}
+footer {
+  height: 500px;
+  background: #b9d9d9;
+  color: #888d9c;
+  font-size: 300%;
+}
+.container {
+  margin: 0 auto;
+  width: 1100px;
+}
+h1, h2, h3, h4, h5 {
+  font-family: Lora;
+  font-weight: 700;
+  color: #474752;
+}
+h1 {
+  font-size: 48px;
+  margin: 60px 0;
+  text-align: center;
+}
+p {
+  margin: 0.75em 0;
+}
+.navbar-default {
+  background: #fff;
+  border-bottom: none;
+}
+.navbar-default .navbar-brand {
+  color: #474752;
+  font-size: 20px;
+  padding-top: 45px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #474752;
+  font-size: 20px;
+  padding-top: 45px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: 86abb5;
+}
+.navbar-default .navbar-collapse {
+  background: #fff;
+}
+
+.imageFrame {
+  max-width: 100%;
+  height: auto;
+  border: none;
+/*  border: 3px solid #dfe7f2;*/
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+#top img {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+@media(max-width:767px){}
+@media(min-width:768px){
+  .navbar-default .navbar-brand,
+  ul.navbar-right {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media(min-width:992px){
+  .navbar-default .navbar-brand,
+  ul.navbar-right {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media(min-width:1200px){
+  .navbar-default .navbar-brand,
+  ul.navbar-right {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+
+
