@@ -1,0 +1,81 @@
+---
+layout: default
+title: Match Game
+section: applications
+---
+
+<section id="matchGame" ng-app="matchApp" ng-controller="MatchController">
+  <div class="submenu">
+    <div class="container" >
+      <div class="row">
+        <div id="instructions" class="col-xs-6 {(g.showInstructions)}">
+          {(g.instructions)}
+        </div>
+        <div id="moves" class="col-xs-6 {(g.showScore)}">{(showMoves())}</div>
+      </div>
+    </div>
+  </div>
+  <div id="page-header">
+    <h2>Match Game</h2>
+  </div>
+
+<div class="container" >
+  <div id="overview" class="row {(g.showStart)}">
+    <div class="col-sm-6 col-sm-offset-3">
+      Match Game is based on the Concentration card game.  
+      The object is to find matching pairs of cards.  
+      The game continues until all of the matching pairs
+      have been found.  Match Game can be played by
+      either one or two players.
+    </div>
+  </div>
+  
+  <img class="matchImg {(g.showStart)}" src="../images/applications/match.jpg">
+
+  <div id="score" class="{(g.showScore)}">
+    <div id="player1" class="row">
+      <div class="playerId {(g.player1Turn)}">Player 1</div>
+      <div class="scoreboard" 
+           ng-repeat="match in g.player1Matches">
+        <div class="scoreIcon {(match.value)}"
+             aria-hidden="true"></div>
+      </div>
+    </div>
+    
+    <div id="player2" class="row  {(g.showPlayer2)}">
+      <div class="playerId {(g.player2Turn)}">Player 2</div>
+      <div class="scoreboard" 
+           ng-repeat="match in g.player2Matches">
+        <div class="scoreIcon {(match.value)}"
+             aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="start-buttons" class="{(g.showButtons)}">
+    <button type="button" 
+            class="btn btn-primary"
+            ng-click="start1Person()">
+      Start 1 Player Game
+    </button><br>
+    <button type="button" 
+            class="btn btn-primary"
+            ng-click="start2Person()">
+      Start 2 Player Game
+    </button>
+  </div>
+</div>   
+    
+<div id="gameBoard">
+  <div class="glyph {(card.state)}" 
+       ng-repeat="card in g.cards"
+       ng-click="pickCard($index)">
+    <div class="fs1 {(card.displayValue)}"
+         aria-hidden="true"></div>
+  </div>
+</div>
+  
+
+
+</section>
+

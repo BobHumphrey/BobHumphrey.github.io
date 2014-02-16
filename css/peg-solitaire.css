@@ -1,0 +1,97 @@
+#pegSolitaire {
+  background: #fff;
+  overflow: auto;
+}
+#pegSolitaire .submenu ul {
+  margin: 0;
+  padding: 10px 0 0 0;
+  list-style-type: none;
+  text-align: center;
+}
+#pegSolitaire .submenu ul li {
+  display: inline;
+  padding: 0 10px;
+}
+#pegSolitaire .submenu .btn {
+  padding: 0;
+}
+#pegSolitaire .submenu i {
+  color: #164756;
+}
+#pegSolitaire .instructions {
+  font-size: 18px;
+  color: #888d9c;
+  margin-top: 60px;
+}
+#pegSolitaire h4 {
+  font-size: 20px;
+  margin-top: 40px;
+}
+#pegSolitaire #board {
+  width: 505px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+#pegSolitaire #board #score {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#pegSolitaire #board #gameOver {
+  margin-bottom: 20px;
+}
+#pegSolitaire #board #score ul, 
+#pegSolitaire #board #gameOver ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+#pegSolitaire #board #score ul li,
+#pegSolitaire #board #gameOver ul li {
+  display: inline;
+  padding: 0 25px;
+}
+#pegSolitaire .inPlayfalse {
+  width: 68px;
+  height: 68px;
+  background-color: #ff9280;
+  margin: 2px;
+  float: left;
+}
+#pegSolitaire .inPlaytrue {
+  width: 68px;
+  height: 68px;
+  background-color: #ffd980;
+  margin: 2px;
+  float: left;
+}
+#pegSolitaire .inPlayfalse img,
+#pegSolitaire .inPlaytrue img {
+  width: 50px;
+  margin: 9px;
+}
+#pegSolitaire .pointer {
+  cursor: pointer;
+} 
+#pegSolitaire .defaultCursor {
+  cursor: default;
+} 
+
+/*MEDIA QUERIES*/
+
+@media(min-width:1200px){
+  #pegSolitaire #board {
+    width: 575px;
+  }
+  #pegSolitaire .inPlayfalse,
+  #pegSolitaire .inPlaytrue {
+    width: 78px;
+    height: 78px;
+  }
+  #pegSolitaire .inPlayfalse img,
+  #pegSolitaire .inPlaytrue img {
+    width: 60px;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link href='http://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/fontello.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/match-game.css" rel="stylesheet">
+    <link href="/css/peg-solitaire.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-level-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><i class="icon-paper-plane"></i>Bob Humphrey</a>
+      </div>
+      <div class="collapse navbar-collapse" id="top-level-nav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/work/kure-beach-village.html">Work</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+      {{ content }}
+    <footer id="footer">
+      <div class="contact">
+        <span class="contact-label"><i class="icon-mail-alt"></i></span>
+        <a href="mailto:rphumphrey@gmail.com">rphumphrey@gmail.com</a> 
+      </div>
+      <div class="elsewhere">
+        <ul class="links">
+          <li><a href="/photography/"><i class="icon-camera"></i></a></li>
+          <li><a href="http://www.rdio.com/people/BobHumphrey/"><i class="icon-music"></i></a></li>
+          <li><a href="https://www.goodreads.com/user/show/9075241-bob-humphrey"><i class="icon-book"></i></a></li>
+          <li><a href="https://github.com/BobHumphrey"><i class="icon-github"></i></a></li>
+          <li><a href="/bookmarks"><i class="icon-bookmark"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" ></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="/js/production.js"></script>
+    <script src="/js/peg-solitaire/app.js"></script>
+    <script src="/js/peg-solitaire/controllers.js"></script>
+    <script src="/js/peg-solitaire/services.js"></script>
+</html>

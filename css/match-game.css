@@ -1,0 +1,115 @@
+/* MATCH GAME */
+
+
+.glyph {
+  text-align: center;
+  margin: 4px 4px;
+  width: 55px;
+  height: 50px;
+  border-radius: .25em;
+  box-shadow: none;
+  float: left;
+  cursor: pointer;
+}
+.fs1 {
+  font-size: 2.4em;
+  color: #fff;
+}
+#gameBoard {
+  width: 505px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  margin-top: 20px;
+}
+#matchGame {
+  background: #fff;
+  padding-bottom: 80px;
+}
+#matchGame #page-header {
+  margin-bottom: 20px;
+}
+#matchGame #overview {
+  font-size: 18px;
+  color: #888d9c;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#matchGame .matchImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#matchGame .currentPlayer {
+  color: #ff9280;
+  display: inline;
+}
+#matchGame .otherPlayer {
+  color: #474752;
+  display: inline;
+}
+#matchGame .playerId {
+  width: 100px;
+  float: left;
+  font-size: 24px;
+}
+#matchGame .scoreboard {
+  font-size: 24px;
+  float: left;
+  width: 1.5em;
+  text-align: left;
+  height: 1.5em;
+  color: #267b94;
+  display: inline;
+  float: left;
+}
+#matchGame #instructions {
+  margin-bottom: 25px;
+  text-align: left;
+}
+#matchGame #moves {
+  text-align: right;
+  padding-top: 10px;
+}
+#matchGame button {
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+#matchGame a.returnLink {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+}
+#matchGame .show-card {
+  background: #ffd980;
+  cursor: hand;
+}
+#matchGame .match-card {
+  background: #ff9280;
+}
+#matchGame .show-value {
+  background: #267b94;
+}
+#matchGame .hide-value {
+  background: #ff9280;
+}
+#matchGame #start-buttons {
+  margin-top: 20px;
+}
+
+/*MEDIA QUERIES*/
+
+@media(min-width:1200px){
+  #gameBoard {
+  width: 785px;
+}
+.glyph {
+  width: 90px;
+  height: 85px;
+}
+.fs1 {
+  font-size: 4em;
+}
+  
+}
