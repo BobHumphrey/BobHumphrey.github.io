@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bob Humphrey - {{ page.title }}</title>
+    <title>Bob Humphrey - Dashboard</title>
     <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,78 @@
         </ul>
       </div>
     </nav>
-      {{ content }}
+      <section>
+  <div class="submenu">
+    <ul class="nav nav-pills nav-4">
+      <li><a href="http://library.uncw.edu/facts_planning/dashboard" 
+        target="_blank"><i class="icon-desktop"></i>Website</a>
+      </li>
+      <li class="disabled"><a href="#"><i class="icon-align-justify"></i>Code</a></li>
+      <li><a href="/work/peg-solitaire.html">
+        <i class="icon-left-big"></i>Previous</a></li>
+      <li><a href="/work/room-reservations.html">
+        <i class="icon-right-big"></i>Next</a></li>
+    </ul>
+  </div>
+</section>
+<section id="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2" >
+        <img src="/images/work/factsandplanning1.jpg" alt="dashboard" class="imageFrame">
+      </div>
+      <div class="col-xs-6 col-sm-5 col-md-4" >
+        <img src="/images/work/factsandplanning2.jpg" alt="dashboard" class="imageFrame">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" >
+        <h1>Dashboard</h1>
+        <p>When Randall Library was interested in creating a Statistics Dashboard 
+          to “to visually demonstrate the use, activity and resources in the library,” 
+          I put together the following solution.  Making use of 
+          <a href="https://drupal.org/documentation/blocks" target="_blank">Drupal blocks</a>, 
+          I coded PHP scripts that called upon the 
+          <a href="http://teethgrinder.co.uk/open-flash-chart-2/" target="_blank">Open Flash Chart 2 API</a> 
+          to create attractive, easy to use charts and graphs.  
+          A few of the charts are manually updated as new data becomes available, 
+          but most of the graphs query live databases to display current information 
+          that is continuously updated.  The final result is an attractive, easy to
+          understand
+          page made entirely of free, open source components.
+        </p>
+      </div>
+    </div>
+    <div class="made-with">
+      <img src="/images/misc/made-with.jpg" alt="This site was made with" >
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="row">
+            <div class="col-xs-3" >
+              
+            </div>
+            <div class="col-xs-3" >
+              <img src="/images/skills/php.jpg" alt="PHP" class="img-responsive">
+            </div>
+            <div class="col-xs-3" >
+              <img src="/images/skills/drupal.jpg" alt="Drupal" class="img-responsive">
+            </div>
+            <div class="col-xs-3" >
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <footer id="footer">
       <div class="contact">
         <span class="contact-label"><i class="icon-mail-alt"></i></span>
